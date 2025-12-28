@@ -1,4 +1,4 @@
-@use '../../../styles/variables/colors' as colors;
+@use "../../../styles/variables/colors" as colors;
 
 .ctaSection {
   text-align: center;
@@ -9,15 +9,19 @@
 .ctaContent {
   max-width: 600px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .ctaText {
-  font-size: 1.1rem;
-  color: #444;
+  font-size: 1.5rem;
+  color: white;
   margin-bottom: 1.5rem;
 
   strong {
-    color: var(--black);
+    color: white;
+    font-weight: 700;
+    
   }
 }
 
@@ -27,6 +31,7 @@
   font-weight: 700;
   color: var(--yellow);
   margin-top: 0.5rem;
+  color: white;
 
   @media (max-width: 321px) {
     font-size: 1.4rem;
@@ -35,7 +40,7 @@
 
 .ctaButton {
   background-color: var(--yellow);
-  color: var(--black);
+  color: white;
   border: none;
   padding: 1rem 2rem;
   border-radius: 12px;

@@ -1,4 +1,4 @@
-@use '../../../styles/variables/colors' as colors;
+@use "../../../styles/variables/colors" as colors;
 
 .gallery {
   padding: 80px 0;
@@ -692,6 +692,8 @@
 
   @media (max-width: 480px) {
     gap: 0.375rem;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -834,11 +836,23 @@
     height: 36px;
 
     &:first-of-type {
-      left: 5px;
+      left: 25%;
     }
 
     &:last-of-type {
-      right: 5px;
+      right: 25%;
+
+      @media (max-width: 480px) {
+        right: -5px;
+      }
+
+      @media (max-width: 426px) {
+        right: 10%;
+      }
+
+      @media (max-width: 376px) {
+        right: 5%;
+      }
     }
   }
 
@@ -847,6 +861,21 @@
     font-size: 1rem;
     width: 32px;
     height: 32px;
+    right: 90%;
+  }
+}
+
+.lightboxNavLeft {
+  @media (max-width: 768px) {
+    left: 25%;
+  }
+
+  @media (max-width: 426px) {
+    left: 10%;
+  }
+
+  @media (max-width: 376px) {
+    left: 5%;
   }
 }
 

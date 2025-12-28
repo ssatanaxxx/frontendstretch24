@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { FiCheck } from "react-icons/fi";
 import styles from "./Hero.module.scss";
-
-import shadowCeilingImg from "../../../assets/shadowCeilings/shadow-ceiling.jpg";
-import floatingCeilingImg from "../../../assets/SoaringСeilings/floating-ceiling.jpg";
-import glowCeilingImg from "../../../assets/TypesOFceilings/glow-ceiling.jpg";
-import fullLightCeilingImg from "../../../assets/ceilingLight/full-light-ceiling.jpg";
 import CtaSection from "../CtaSection/CtaSection";
+
+import shadowCeilingImg from "../../../assets/Shadow/Hero-shadow.jpg";
+import floatingCeilingImg from "../../../assets/Floating/Hero-float.jpg";
+import glowCeilingImg from "../../../assets/WithTheDawn/Hero-dawn.jpg";
+import fullLightCeilingImg from "../../../assets/Light/Hero-light.jpg";
 
 const Hero: React.FC<{ id: string }> = ({ id }) => {
   const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -18,7 +18,7 @@ const Hero: React.FC<{ id: string }> = ({ id }) => {
       price: "от 6 000 ₸/м²",
       fullDesc:
         "Потолок без плинтусов, с аккуратным теневым зазором. Пространство выглядит чище, ровнее и визуально выше. Подходит для современных интерьеров.",
-      features: ["Бесплатный замер", "Гарантия 5 лет"],
+      features: ["Для коридор и угловых зон", "Minimalism/Loft"],
       image: shadowCeilingImg,
     },
     {
@@ -27,11 +27,7 @@ const Hero: React.FC<{ id: string }> = ({ id }) => {
       price: "от 12 000 ₸/м²",
       fullDesc:
         "Световая линия по периметру подчёркивает геометрию и создаёт эффект «воздушного» потолка. Чистые линии, продуманный свет и современный стиль.",
-      features: [
-        "Для спален и гостиных",
-        "Дизайнерские интерьеры",
-        "Minimalism/Modern",
-      ],
+      features: ["Для спален и гостиных", "Minimalism/Modern"],
       image: floatingCeilingImg,
     },
     {
@@ -40,11 +36,7 @@ const Hero: React.FC<{ id: string }> = ({ id }) => {
       price: "по запросу",
       fullDesc:
         "Встроенная подсветка подчёркивает форму потолка, создаёт глубину и атмосферу. Мягкий или акцентный свет под интерьер и ваше настроение.",
-      features: [
-        "Чёткая геометрия",
-        "Современный эффект",
-        "Выбор цвета и яркости",
-      ],
+      features: ["Офисные пространства, кухни-студии", "Minimalism/Modern"],
       image: glowCeilingImg,
     },
     {
@@ -54,9 +46,8 @@ const Hero: React.FC<{ id: string }> = ({ id }) => {
       fullDesc:
         "Равномерное освещение по всей площади потолка через светопрозрачное полотно. Без теней и точек, современный и аккуратный вид.",
       features: [
-        "Для ванных комнат",
-        "Кухни и коридоры",
-        "Без видимых светильников",
+        "Прихожие, ванные комнаты, кухни",
+        "Minimalism/Haytech/Scandinavian",
       ],
       image: fullLightCeilingImg,
     },
@@ -72,9 +63,7 @@ const Hero: React.FC<{ id: string }> = ({ id }) => {
         <div className={styles.content}>
           <div className={styles.header}>
             <h1 className={styles.mainTitle}>
-              ПОДНИМАЕМ{" "}
-              <span className={styles.highlight}>ПЛАНКУ КАЧЕСТВА</span> В
-              НАТЯЖНЫХ ПОТОЛКАХ!
+              ПОДНИМАЕМ ПЛАНКУ КАЧЕСТВА В НАТЯЖНЫХ ПОТОЛКАХ!
             </h1>
 
             <p className={styles.subtitle}>
