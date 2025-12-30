@@ -36,7 +36,10 @@ const Hero: React.FC<{ id: string }> = ({ id }) => {
       price: "по запросу",
       fullDesc:
         "Встроенная подсветка подчёркивает форму потолка, создаёт глубину и атмосферу. Мягкий или акцентный свет под интерьер и ваше настроение.",
-      features: ["Офисные пространства, кухни-студии", "Minimalism/Modern"],
+      features: [
+        "Офисные пространства, кухни-студии",
+        "Minimalism/Modern",
+      ],
       image: glowCeilingImg,
     },
     {
@@ -46,8 +49,8 @@ const Hero: React.FC<{ id: string }> = ({ id }) => {
       fullDesc:
         "Равномерное освещение по всей площади потолка через светопрозрачное полотно. Без теней и точек, современный и аккуратный вид.",
       features: [
-        "Прихожие, ванные комнаты, кухни",
-        "Minimalism/Haytech/Scandinavian",
+        "Офисные пространства, кухни-студии",
+        "Minimalism/Haytech/Sсandinavian",
       ],
       image: fullLightCeilingImg,
     },
@@ -63,7 +66,9 @@ const Hero: React.FC<{ id: string }> = ({ id }) => {
         <div className={styles.content}>
           <div className={styles.header}>
             <h1 className={styles.mainTitle}>
-              ПОДНИМАЕМ ПЛАНКУ КАЧЕСТВА В НАТЯЖНЫХ ПОТОЛКАХ!
+              ПОДНИМАЕМ{" "}
+              <span className={styles.highlight}>ПЛАНКУ КАЧЕСТВА</span> В
+              НАТЯЖНЫХ ПОТОЛКАХ!
             </h1>
 
             <p className={styles.subtitle}>
