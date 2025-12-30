@@ -79,9 +79,9 @@ const Header: React.FC = () => {
 
         {/* Контакты для десктопа */}
         <div className={styles.contacts}>
-          <a href="tel:+77470442896" className={styles.phone}>
+          <a href="tel:+77474153169" className={styles.phone}>
             <FiPhone className={styles.phoneIcon} />
-            <span>+7 747 044 28 96</span>
+            <span>+7 747 415 3169</span>
           </a>
           <button
             className={`btn ${styles.orderBtn}`}
@@ -99,7 +99,7 @@ const Header: React.FC = () => {
         {/* Мобильные кнопки */}
         <div className={styles.mobileControls}>
           <a
-            href="tel:+77470442896"
+            href="tel:+77474153169"
             className={styles.mobilePhoneButton}
             aria-label="Позвонить"
           >
@@ -138,9 +138,9 @@ const Header: React.FC = () => {
 
           {/* Контакты в мобильном меню */}
           <div className={styles.mobileContacts}>
-            <a href="tel:+77470442896" className={styles.phone}>
+            <a href="tel:+77474153169" className={styles.phone}>
               <FiPhone className={styles.phoneIcon} />
-              <span>+7 747 044 28 96</span>
+              <span>+7 747 415 3169</span>
             </a>
             <button
               className={`btn ${styles.orderBtn}`}

@@ -1,6 +1,6 @@
 import React from "react";
 import { FiMapPin, FiPhone, FiMail, FiClock } from "react-icons/fi";
-import { FaWhatsapp, FaTelegram, FaInstagram, FaVk } from "react-icons/fa";
+import { FaWhatsapp, FaTelegram, FaInstagram, FaTrello } from "react-icons/fa";
 import styles from "./Contacts.module.scss";
 
 interface ContactsProps {
@@ -18,9 +18,9 @@ const Contacts: React.FC<ContactsProps> = ({ id }) => {
     {
       icon: <FiPhone />,
       title: "Телефон",
-      content: "+7 747 044 28 96",
+      content: "+7 747 415 3169",
       details: "Ежедневно с 9:00 до 21:00",
-      link: "tel:+77470442896",
+      link: "tel:+77474153169",
     },
     {
       icon: <FiMail />,
@@ -41,17 +41,17 @@ const Contacts: React.FC<ContactsProps> = ({ id }) => {
     {
       icon: <FaWhatsapp />,
       label: "WhatsApp",
-      href: "https://wa.me/77470442896",
+      href: "https://wa.me/77474153169",
       color: "#25D366",
     },
     {
       icon: <FaTelegram />,
       label: "Telegram",
-      href: "https://t.me/+77470442896",
+      href: "https://t.me/+77474153169",
       color: "#0088cc",
     },
-    { icon: <FaInstagram />, label: "Instagram", href: "#", color: "#E1306C" },
-    { icon: <FaVk />, label: "VKontakte", href: "#", color: "#4C75A3" },
+    { icon: <FaInstagram />, label: "Instagram", href: "https://www.instagram.com/natyazhka24?igsh=bnc5am5lZDEzMzhs", color: "#E1306C" },
+    { icon: <FaTrello />, label: "Trello", href: "#", color: "#0079BF" },
   ];
 
   const handleMapButtonClick = () => {
