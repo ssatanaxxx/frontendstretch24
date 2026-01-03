@@ -576,13 +576,23 @@ body.menuOpen {
 
   @media (max-width: 768px) {
     min-height: 56px;
+    background-image: url("../../../public/logo/calculate-logo.svg");
+    background-position: center top -33px;
+    background-repeat: no-repeat;
+    background-size: 15%;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     min-height: 52px;
+    background-position: center top -30px;
+    background-repeat: no-repeat;
+    background-size: 25%;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 376px) {
     min-height: 48px;
+    background-position: center top -24px;
+    background-repeat: no-repeat;
+    background-size: 25%;
   }
 }
